@@ -5,3 +5,11 @@ http://localhost:8088/caculation.html
 Special chars are not accepted.	
 
 http://localhost:8088/evaluate?operation=addition&operand1=232323&operand2=232323
+
+mvn clean install
+
+java -jar target/longstring-operation-0.0.1-SNAHOT.jar
+
+Note : Minum sign is disbaled.
+
+
