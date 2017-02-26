@@ -28,13 +28,13 @@
 	$(function() {
 		$('#operand1').keypress(
 				function(e) {
-					if (e.which == 48 || e.which == 49
+					/* if (e.which == 48 || e.which == 49
 							|| e.which == 50 || e.which == 51 || e.which == 52
 							|| e.which == 53 || e.which == 54 || e.which == 55 || e.which == 56 
 							|| e.which == 57 || e.which == 8) {
 					} else {
 						return false;
-					}
+					} */
 				});
 	});
 	$(function() {
@@ -99,15 +99,15 @@
 			<div class="form-group">
 				<label for="inputOperand" class="control-label col-xs-2">Operand1</label>
 				<div class="col-xs-10">
-					<input type="number" class="form-control" id="operand1"
-						value="232323" name="operand1" placeholder="1">
+					<textarea class="form-control" rows="5" class="form-control" id="operand1"
+						name="operand1" placeholder="1"></textarea>
 				</div>
 			</div>
 			<div class="form-group">
 				<label for="inputPassword" class="control-label col-xs-2">Operand2</label>
 				<div class="col-xs-10">
-					<input type="number" min="1" class="form-control" id="operand2"
-						value="232323" name="operand2" placeholder="1">
+					<textarea class="form-control" rows="5"  class="form-control" id="operand2"
+						 name="operand2" placeholder="1"></textarea>
 				</div>
 			</div>
 			<div class="form-group">

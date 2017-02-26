@@ -67,7 +67,7 @@ public class OperationImpl implements IOperation {
 						result.append(j - 1);
 						operSubString1 = subResult;
 					} else {
-						result.append(j - 2);
+						result.append(j - 1);
 						operSubString1 = previousMulResult;
 					}
 				} else {
@@ -93,8 +93,13 @@ public class OperationImpl implements IOperation {
 					}
 				}
 				if (j == 10) {
-					result.append(j - 1);
-					operSubString1 = subResult;
+					if (subResult.indexOf("-") != -1) {
+						result.append(j - 1);
+						operSubString1 = subResult;
+					} else {
+						result.append(j - 1);
+						operSubString1 = previousMulResult;
+					}
 				} else {
 					result.append(j - 1);
 					operSubString1 = previousMulResult;
